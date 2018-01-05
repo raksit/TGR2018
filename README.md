@@ -1,2 +1,3 @@
 # TGR2018
-# TGR2018
+
+Sample code and doc for all competitors
