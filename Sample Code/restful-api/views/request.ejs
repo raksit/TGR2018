@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include head.ejs %>
+</head>
+
+<body>
+  <header>
+    <% include header.ejs %>
+  </header>
+  <main>
+    <div class="jumbotron">
+      <table>
+        <% for(var i=0; i < data.length; i++) { %>
+          <tr>
+            <td>
+              <%= data[i].id %>
+            </td>
+            <td>
+              <%= data[i].name %>
+            </td>
+            <td>
+              <%= data[i].username %>
+            </td>
+          </tr>
+        <% } %>
+      </table>
+    </div>
+  </main>
+  <footer>
+    <% include footer.ejs %>
+  </footer>
+</body>
+
+</html>

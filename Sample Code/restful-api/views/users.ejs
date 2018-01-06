@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include head.ejs %>
+</head>
+
+<body>
+  <header>
+    <% include header.ejs %>
+  </header>
+  <main>
+    <div class="jumbotron">
+      <ul>
+        <% users.forEach(function(user) { %>
+          <li>
+            <%= user.name %> -
+            <%= user.id %>
+          </li>
+          <% }); %>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <% include footer.ejs %>
+  </footer>
+</body>
+
+</html>
